@@ -44,6 +44,18 @@ document.getElementById('music-checkbox').addEventListener('change', ($event) =>
   
 });
 
+//FAVOURITE MODE OF TRANSPORT
+
+
+for (let i = 0; i < radioButtons.length; i++) {
+  radioButtons[i].addEventListener('change', ($event) => {
+    transportResult.textContent = $event.target.value
+  })
+}
+
+ musicDropDown.addEventListener('change', ($event) => {
+    musicResult.textContent = $event.target.value
+  })
 
 
 
